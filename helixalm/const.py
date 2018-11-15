@@ -87,6 +87,54 @@ API_PATH = {
     'test_runs_variants':                   '/{projectID}/testruns/{itemID}/variants',
 
     # Requirements                          Requests for viewing and updating requirements.
+    'requirements':                         '/{projectID}/requirements',
+    'requirements_search':                  '/{projectID}/requirements/search',
+    'requirements_specific':                '/{projectID}/requirements/{itemID}',
 
-    # TODO: Continue adding API endpoints.
+    # Requirement Attachments               Requests for viewing and updating files attached to requirements.
+    'requirements_attachments':             '/{projectID}/requirements/{itemID}/attachments',
+    'requirements_attachments_file':        '/{projectID}/requirements/{itemID}/attachments/{attachmentID}',
+
+    # Requirement Events                    Requests for viewing and updating requirement workflow events.
+    'requirements_events':                  '/{projectID}/requirements/{itemID}/events',
+    'requirements_events_specific':         '/{projectID}/requirements/{itemID}/events/{eventID}',
+    'requirements_events_attachments':      '/{projectID}/requirements/{itemID}/events/{eventID}/attachments',
+    'requirements_events_attachments_file': '/{projectID}/requirements/{itemID}/events/{eventID}/attachments/{attachmentID}',
+
+    # Requirement Documents                 Requests for viewing requirement documents that contain a specific requirement.
+    'requirements_documents':               '/{projectID}/requirements/{itemID}/documents',
+
+    # Requirement Versions                  Requests for viewing requirement versions.
+    'requirements_versions':                '/{projectID}/requirements/{itemID}/versions',
+
+    # Documents                             Requests for viewing and udpating requirement documents.
+    'documents':                            '/{projectID}/documents',
+    'documents_search':                     '/{projectID}/documents/search',
+    'documents_specific':                   '/{projectID}/documents/{itemID}',
+
+    # Document Attachments                  Requests for viewing and updating files attached to requirement documents.
+    'documents_attachments':                '/{projectID}/documents/{itemID}/attachments',
+    'documents_attachments_file':           '/{projectID}/documents/{itemID}/attachments/{attachmentID}',
+
+    # Document Events                       Requests for viewing and updating requirement document workflow events.
+    'documents_events':                     '/{projectID}/documents/{itemID}/events',
+    'documents_events_specific':            '/{projectID}/documents/{itemID}/events/{eventID}',
+    'documents_events_attachments':         '/{projectID}/documents/{itemID}/events/{eventID}/attachments',
+    'documents_events_attachments_file':    '/{projectID}/documents/{itemID}/events/{eventID}/attachments/{attachmentID}',
+
+    # Document Snapshots                    Requests for creating and viewing requirement document snapshots.
+    'documents_snapshots':                  '/{projectID}/documents/{itemID}/snapshots',
+
+    # Document Trees                        Requests for viewing and updating requirement document trees.
+    'document_trees':                       '/{projectID}/documentTrees/{itemID}',
+    'document_trees_nodes':                 '/{projectID}/documentTrees/{itemID}/nodes',
+    'document_trees_nodes_specific':        '/{projectID}/documentTrees/{itemID}/nodes/{nodeID}',
+    'document_trees_nodes_child_nodes':     '/{projectID}/documentTrees/{itemID}/nodes/{nodeID}/childNodes',
+
+    # Files                                 Requests for retrieving files.
+    'files':                                '/{projectID}/files/{encodedFileID}',
+
+    # Misc                                  Miscellaneous requests.
+    'not_yet_implemented':                  '/NotYetImplemented'
+
 }
