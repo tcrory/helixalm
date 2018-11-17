@@ -3,7 +3,7 @@
 
 class Project:
 
-    def __init__(self, project_name: str, project_id: int, project_uuid: str):
+    def __init__(self, project_name: str, project_id: str, project_uuid: str):
         """Contains information about a Helix ALM project."""
         self.name = project_name
         self.id = int(project_id)
